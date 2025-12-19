@@ -13,16 +13,17 @@ Terraform Configuration:
 
 ## Prerequisite
 - Install Terraform on VScode
-- Configure AWS Toolkit
+- Configure AWS Toolkit using ``AWS Configure``
+![AWS CLI setup and Configuration](<AWS CLI setup and Configuration.jpg>)
 
 ### Project Tasks:
 #### Task 1: Terraform Configuration for EC2 Instance
 - Create a new directory for your Terraform project named **terraform-ec2-ami** using the ``mkdir`` command.
-![Folder created](<Folder Created.jpg>)
+![terraform-ec2-ami](<Folder Created.jpg>)
 
 
 - Inside the project directory, create two Terraform configuration files (provider.tf and ec2.tf).
-![Configuration files](<Configuration files.jpg>)
+![Terraform script](<Configuration files.jpg>)
 
 
 - Write Terraform code to create an EC2 instance. Specifying the instance type, key pair, and security group.
@@ -30,7 +31,7 @@ Terraform Configuration:
 
 
 - Initialize the Terraform project using the command: ``terraform init.``
-![Terraform INIT](<Terraform INIT.jpg>)
+![terraform init](<terraform init.jpg>)
 
 - Use ``terraform plan`` command to check what changes will be made
 
@@ -73,13 +74,19 @@ Terraform Configuration:
 ![alt text](<Terraform Initialized.jpg>)
 
 - Validate the configuration with the command ``terraform validate``
-![Terraform Validation](<Validate the Configuration.jpg>)
+![terraform validate](<terraform validate.jpg>)
 
 - Check plan to see what changes will be made ``terraform plan``
-![Terraform Planning](<Plan Check.jpg>)
+![terraform plan](<terraform plan.jpg>)
 
 - Apply the Terraform configuration using terraform apply and confirm the creation of the EC2 instance and AMI. This is done with ``terraform apply`` command
-![Apply Teraform](<Terraform Apply.jpg>)
-![EC2 Created on AWS](<EC2 Created on AWS.jpg>)
+![terraform apply](<terraform apply.jpg>)
+![EC2 instance](<EC2 instance.jpg>)
+
+- Use the ``terraform destoy`` command to clean up your resources
+![terraform destroy](<terraform destroy.jpg>)
+
+ ## Observations and Challenges:
+ To get the concept is easy but more focus and critical thinking is needed. I understood why things did not work at some point while on the project.
 
 ## Thank You
