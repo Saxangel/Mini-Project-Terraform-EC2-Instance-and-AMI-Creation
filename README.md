@@ -56,18 +56,30 @@ Terraform Configuration:
 - Destroy resources if no longer needed using the command ``terraform destroy``
 
 ### Instructions:
-- Create a new directory for your Terraform project using a terminal (mkdir terraform-ec2-ami).
+- A new directory is created for Terraform project using a terminal (mkdir terraform-ec2-ami).
+![alt text](<New directory Created.jpg>)
 
 - Change into the project directory (cd terraform-ec2-ami).
+![alt text](<Change Directory.jpg>)
 
-- Create a Terraform configuration files (provider.tf and ec2.tf).
+
+- Create a Terraform configuration files (provider.tf and main.tf).
+![alt text](<Main.tf file Created.jpg>)
 
 - Copy and paste the sample Terraform configuration template into your file.
+![alt text](<Configurature template.jpg>)
 
 - Save the file and initialize the Terraform project using terraform init.
+![alt text](<Terraform Initialized.jpg>)
 
-- Apply the Terraform configuration using terraform apply and confirm the creation of the EC2 instance and AMI.
+- Validate the configuration with the command ``terraform validate``
+![Terraform Validation](<Validate the Configuration.jpg>)
 
-- Experiment with modifying the configuration, such as changing instance type or adding additional resources.
+- Check plan to see what changes will be made ``terraform plan``
+![Terraform Planning](<Plan Check.jpg>)
+
+- Apply the Terraform configuration using terraform apply and confirm the creation of the EC2 instance and AMI. This is done with ``terraform apply`` command
+![Apply Teraform](<Terraform Apply.jpg>)
+![EC2 Created on AWS](<EC2 Created on AWS.jpg>)
 
 ## Thank You
